@@ -200,15 +200,52 @@ function submitPreorder() {
         timestamp: new Date().toLocaleString()
     };
 
-    // You can integrate with EmailJS or your backend here
+    // Send pre-order info to admin via EmailJS
+    const adminParams = {
+        to_name: "Odisika Import Admin",
+        product_name: preorderData.product,
+        customer_name: preorderData.name,
+        customer_email: preorderData.email,
+        customer_phone: preorderData.phone,
+        quantity: preorderData.quantity,
+        notes: preorderData.notes || "No additional notes",
+        order_time: preorderData.timestamp
+    };
+
+    // Show loading state
+    const submitButton = event.target;
+    const originalText = submitButton.innerHTML;
+    submitButton.innerHTML = '<div class="loading"></div> Processing...';
+    submitButton.disabled = true;
+
+    emailjs.send('service_sbijez1', 'template_preorder', adminParams, 'nxzXBLtLz_RrrX1mv')
+        .then(() => {
+            // Close modal and reset form
+            bootstrap.Modal.getInstance(document.getElementById('preorderModal')).hide();
+            form.reset();
+            
+            // Redirect to WhatsApp pre-order group
+            const whatsappMessage = `Hi! I just submitted a pre-order for ${preorderData.product}. My details: Name: ${preorderData.name}, Phone: ${preorderData.phone}, Quantity: ${preorderData.quantity}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappURL = `https://wa.me/233543210987?text=${encodedMessage}`;
+            
+            // Show success message with redirect option
+            const confirmRedirect = confirm('Pre-order submitted successfully! Click OK to join our WhatsApp pre-order group for updates and exclusive offers.');
+            if (confirmRedirect) {
+                window.open(whatsappURL, '_blank');
+            }
+        })
+        .catch((error) => {
+            console.error('Failed to send pre-order:', error);
+            alert('Failed to submit pre-order. Please try again or contact us directly.');
+        })
+        .finally(() => {
+            // Restore button state
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+        });
+
     console.log('Pre-order submitted:', preorderData);
-    
-    // For demo purposes, show success message
-    alert('Pre-order submitted successfully! We will contact you soon.');
-    
-    // Close modal and reset form
-    bootstrap.Modal.getInstance(document.getElementById('preorderModal')).hide();
-    form.reset();
 }
 
 // Add loading animation to buttons

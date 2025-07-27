@@ -80,7 +80,9 @@ Each course page (`courses/` directory) includes:
 
 ### EmailJS Configuration
 - **Service ID**: `service_sbijez1`
-- **Template ID**: `template_qg809so`
+- **OTP Template ID**: `template_qg809so`
+- **Admin Notification Template ID**: `template_e0tz7jj`
+- **Pre-order Template ID**: `template_preorder` (needs to be created)
 - **Public Key**: `nxzXBLtLz_RrrX1mv`
 
 ### Development Dependencies

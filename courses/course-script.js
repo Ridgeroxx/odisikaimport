@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('accessDenied').style.display = 'flex';
             }
         }
-    }, 2000);
+    }, 1000);
 });
 
 // Initialize course functionality after access is granted
@@ -190,9 +190,7 @@ function initializeModuleNavigation() {
 
 // Resource download functionality
 function initializeResourceDownloads() {
-    const downloadButtons = document.querySelectorAll('button[class*="btn"]:contains("Download"), button[class*="btn"]:contains("Access")');
-    
-    // Since we can't use :contains in vanilla JS, we'll iterate through buttons
+    // Get all buttons and filter by text content
     const buttons = document.querySelectorAll('button');
     buttons.forEach(button => {
         if (button.textContent.includes('Download') || 
@@ -321,7 +319,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(loadCompletedLessons, 2500);
     
     // Add click tracking for start learning buttons
-    const startButtons = document.querySelectorAll('button[class*="btn"]:contains("Start")');
     document.querySelectorAll('button').forEach(button => {
         if (button.textContent.includes('Start')) {
             button.addEventListener('click', function() {
