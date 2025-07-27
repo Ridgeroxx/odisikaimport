@@ -1,0 +1,94 @@
+Create a full responsive website using HTML, CSS, and JavaScript named “Odisika Import”. It should showcase products, allow pre-orders, have a course registration form with OTP verification using EmailJS, and redirect verified users to specific course pages with access codes.
+
+Each course page must be locked and should auto-unlock if a matching ?code= is passed in the URL. Include Bootstrap grid and TailwindCSS classes for layout and responsiveness. Also, add a floating WhatsApp button and SEO meta tags.
+
+Include the following script.js logic:
+
+js
+Copy
+Edit
+let generatedRealOTP = "";
+
+function sendRealOTP() {
+  const name = document.getElementById("user_name").value;
+  const email = document.getElementById("user_email").value;
+  const course = document.getElementById("user_course").value;
+  const mode = document.getElementById("user_mode").value;
+
+  if (!name || !email || !course || !mode) {
+    alert("Please fill in all fields.");
+    return;
+  }
+
+  generatedRealOTP = Math.floor(100000 + Math.random() * 900000).toString();
+
+  const templateParams = {
+    name: name,
+    email: email,
+    otp: generatedRealOTP,
+    course: course,
+    mode: mode
+  };
+
+  emailjs.send('service_sbijez1', 'template_qg809so', templateParams, 'nxzXBLtLz_RrrX1mv')
+    .then(() => {
+      alert("OTP sent to your email!");
+      document.getElementById("verifySection").style.display = "block";
+    })
+    .catch((error) => {
+      console.error("Failed to send OTP:", error);
+    });
+}
+
+function verifyRealOTP() {
+  const enteredOTP = document.getElementById("user_otp_input").value;
+  const result = document.getElementById("otpResult");
+
+  if (enteredOTP === generatedRealOTP) {
+    result.textContent = "✅ OTP verified! Redirecting...";
+    result.style.color = "green";
+
+    const name = document.getElementById("user_name").value;
+    const email = document.getElementById("user_email").value;
+    const course = document.getElementById("user_course").value;
+    const mode = document.getElementById("user_mode").value;
+
+    sendConfirmationToAdmin(name, email, course, mode);
+
+    const courseCodeMap = {
+      "Pinduoduo": { page: "pinduoduo.html", code: "pinduoduo2025" },
+      "1688": { page: "1688.html", code: "import1688" },
+      "Alibaba": { page: "alibaba.html", code: "alibaba350" }
+    };
+
+    const target = courseCodeMap[course];
+    if (target) {
+      setTimeout(() => {
+        window.location.href = `courses/${target.page}?code=${target.code}`;
+      }, 2000);
+    }
+  } else {
+    result.textContent = "❌ Incorrect OTP. Please try again.";
+    result.style.color = "red";
+  }
+}
+
+function sendConfirmationToAdmin(name, email, course, mode) {
+  const time = new Date().toLocaleString();
+
+  const params = {
+    name,
+    email,
+    course,
+    mode,
+    time
+  };
+
+  emailjs.send('service_sbijez1', 'template_e0tz7jj', params, 'nxzXBLtLz_RrrX1mv')
+    .then(() => {
+      console.log("Admin notified");
+    })
+    .catch((error) => {
+      console.error("Admin notification error:", error);
+    });
+}
