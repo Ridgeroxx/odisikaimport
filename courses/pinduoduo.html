@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pinduoduo Mastery Course - Learn to master China's fastest-growing e-commerce platform">
+    <meta name="keywords" content="Pinduoduo, e-commerce, China, import, course, training">
+    <title>Pinduoduo Mastery Course - Odisika Import</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="position-fixed top-0 start-0 w-100 h-100 bg-primary d-flex align-items-center justify-content-center" style="z-index: 9999;">
+        <div class="text-center text-white">
+            <div class="spinner-border spinner-border-lg mb-3" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <h4>Verifying Access...</h4>
+        </div>
+    </div>
+
+    <!-- Access Denied Screen -->
+    <div id="accessDenied" class="position-fixed top-0 start-0 w-100 h-100 bg-danger d-flex align-items-center justify-content-center" style="z-index: 9998; display: none;">
+        <div class="text-center text-white">
+            <i class="fas fa-lock fa-5x mb-4"></i>
+            <h2 class="mb-3">Access Denied</h2>
+            <p class="lead mb-4">You need a valid access code to view this course.</p>
+            <a href="../index.html#courses" class="btn btn-light btn-lg">
+                <i class="fas fa-arrow-left me-2"></i>Register for Course
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Course Content -->
+    <div id="courseContent" style="display: none;">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-warning" href="../index.html">
+                    <i class="fas fa-ship me-2"></i>Odisika Import
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modules">Modules</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resources">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Course Header -->
+        <section class="bg-gradient-to-r from-purple-900 to-pink-700 text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="course-badge mb-3">
+                            <span class="badge bg-warning text-dark px-3 py-2">
+                                <i class="fas fa-crown me-2"></i>Premium Course
+                            </span>
+                        </div>
+                        <h1 class="display-4 fw-bold mb-3">Pinduoduo Mastery Course</h1>
+                        <p class="lead mb-4">Master China's fastest-growing e-commerce platform and unlock unlimited import opportunities</p>
+                        <div class="course-stats d-flex flex-wrap gap-4">
+                            <div class="stat-item">
+                                <i class="fas fa-clock text-warning me-2"></i>
+                                <span>40+ Hours</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-video text-warning me-2"></i>
+                                <span>120+ Videos</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-certificate text-warning me-2"></i>
+                                <span>Certificate</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-users text-warning me-2"></i>
+                                <span>5000+ Students</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="course-icon">
+                            <i class="fab fa-shopify" style="font-size: 150px; opacity: 0.8;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Overview -->
+        <section id="overview" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="display-6 fw-bold mb-4">Course Overview</h2>
+                        <p class="lead mb-4">Welcome to the most comprehensive Pinduoduo training program available. This course is designed to take you from beginner to expert in navigating and succeeding on China's revolutionary group-buying platform.</p>
+                        
+                        <div class="course-highlights">
+                            <h4 class="mb-3">What You'll Learn:</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Platform Navigation & Setup
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Supplier Identification & Vetting
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Group-Buying Strategies
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Quality Control & Inspection
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Shipping & Logistics
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="highlight-item">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Payment Methods & Security
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card shadow-lg">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Course Details</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <strong>Duration:</strong> 6 Weeks
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong>Level:</strong> Beginner to Advanced
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong>Language:</strong> English with Chinese subtitles
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong>Access:</strong> Lifetime
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong>Support:</strong> 24/7 Community
+                                    </li>
+                                </ul>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 0%" id="courseProgress">
+                                        0% Complete
+                                    </div>
+                                </div>
+                                <button class="btn btn-success w-100">
+                                    <i class="fas fa-play me-2"></i>Start Learning
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Modules -->
+        <section id="modules" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="display-6 fw-bold text-center mb-5">Course Modules</h2>
+                
+                <div class="accordion" id="courseModules">
+                    <!-- Module 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="module1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                <i class="fas fa-play-circle text-primary me-3"></i>
+                                <strong>Module 1: Introduction to Pinduoduo (8 lessons)</strong>
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#courseModules">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <ul class="lesson-list">
+                                            <li><i class="fas fa-video text-primary me-2"></i>Understanding the Pinduoduo Ecosystem</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Creating Your Buyer Account</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Platform Navigation Basics</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Understanding Group-Buying Concept</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Mobile App vs Web Platform</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Language Barriers and Translation Tools</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Currency and Payment Overview</li>
+                                            <li><i class="fas fa-file-pdf text-danger me-2"></i>Module 1 Resources & Quiz</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="module-stats">
+                                            <p><strong>Duration:</strong> 2 hours</p>
+                                            <p><strong>Difficulty:</strong> Beginner</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 0%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="module2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                <i class="fas fa-search text-success me-3"></i>
+                                <strong>Module 2: Product Research & Supplier Analysis (12 lessons)</strong>
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#courseModules">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <ul class="lesson-list">
+                                            <li><i class="fas fa-video text-primary me-2"></i>Advanced Search Techniques</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Reading Product Listings</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Supplier Verification Methods</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Analyzing Reviews and Ratings</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Price Comparison Strategies</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Understanding MOQ (Minimum Order Quantity)</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Communication with Suppliers</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Red Flags to Avoid</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Building Supplier Relationships</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Negotiation Techniques</li>
+                                            <li><i class="fas fa-video text-primary me-2"></i>Quality Assessment Tools</li>
+                                            <li><i class="fas fa-file-pdf text-danger me-2"></i>Supplier Evaluation Checklist</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="module-stats">
+                                            <p><strong>Duration:</strong> 4 hours</p>
+                                            <p><strong>Difficulty:</strong> Intermediate</p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width: 0%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="module3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                <i class="fas fa-shopping-cart text-warning me-3"></i>
+                                <strong>Module 3: Ordering & Group-Buying Mastery (10 lessons)</strong>
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#courseModules">
+                            <div class="accordion-body">
+                                <p>Learn the art of group-buying and maximize your purchasing power on Pinduoduo.</p>
+                                <p><strong>Duration:</strong> 3.5 hours | <strong>Difficulty:</strong> Intermediate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="module4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                <i class="fas fa-shield-alt text-info me-3"></i>
+                                <strong>Module 4: Quality Control & Risk Management (8 lessons)</strong>
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#courseModules">
+                            <div class="accordion-body">
+                                <p>Master quality control processes and protect your investments.</p>
+                                <p><strong>Duration:</strong> 2.5 hours | <strong>Difficulty:</strong> Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="module5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                <i class="fas fa-truck text-secondary me-3"></i>
+                                <strong>Module 5: Shipping & Logistics (6 lessons)</strong>
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#courseModules">
+                            <div class="accordion-body">
+                                <p>Navigate international shipping and logistics with confidence.</p>
+                                <p><strong>Duration:</strong> 2 hours | <strong>Difficulty:</strong> Intermediate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="py-5">
+            <div class="container">
+                <h2 class="display-6 fw-bold text-center mb-5">Course Resources</h2>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-download text-primary mb-3" style="font-size: 3rem;"></i>
+                                <h5 class="card-title">Downloadable Materials</h5>
+                                <p class="card-text">PDFs, checklists, templates, and reference guides</p>
+                                <button class="btn btn-primary">Access Downloads</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-users text-success mb-3" style="font-size: 3rem;"></i>
+                                <h5 class="card-title">Community Forum</h5>
+                                <p class="card-text">Connect with fellow students and get support</p>
+                                <button class="btn btn-success">Join Community</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fas fa-headset text-warning mb-3" style="font-size: 3rem;"></i>
+                                <h5 class="card-title">Live Support</h5>
+                                <p class="card-text">Get help from our expert instructors</p>
+                                <button class="btn btn-warning">Contact Support</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-4">
+            <div class="container">
+                <p class="mb-2">&copy; 2025 Odisika Import. All rights reserved.</p>
+                <p class="mb-0">
+                    <a href="../index.html" class="text-warning">Back to Home</a> |
+                    <a href="#" class="text-warning">Terms of Service</a> |
+                    <a href="#" class="text-warning">Privacy Policy</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Course Script -->
+    <script src="course-script.js"></script>
+</body>
+</html>
