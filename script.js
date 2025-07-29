@@ -109,24 +109,37 @@ function verifyRealOTP() {
 
 // Admin Notification Function
 function sendConfirmationToAdmin(name, email, course, mode) {
-    const time = new Date().toLocaleString();
+  const time = new Date().toLocaleString();
 
-    const params = {
-        name,
-        email,
-        course,
-        mode,
-        time
-    };
+  // Map course names to access codes
+  const courseCodeMap = {
+    "Pinduoduo": "pinduoduo2025",
+    "1688": "import1688",
+    "Alibaba": "alibaba350"
+  };
 
-    emailjs.send('service_sbijez1', 'template_e0tz7jj', params, 'nxzXBLtLz_RrrX1mv')
-        .then(() => {
-            console.log("Admin notified successfully");
-        })
-        .catch((error) => {
-            console.error("Admin notification error:", error);
-        });
+  const code = courseCodeMap[course] || "no-code";
+
+  const params = {
+    name: name,
+    email: email,
+    course: course,
+    mode: mode,
+    time: time,
+    code: code  // 🟢 This will be used in your EmailJS template
+  };
+
+  // Send email using your 'verified' template
+  emailjs.send('service_sbijez1', 'template_verified123', params, 'nxzXBLtLz_RrrX1mv')
+    .then(() => {
+      document.getElementById("otpResult").textContent = "🎉 Verified and registered! Access code has been sent to your email.";
+      document.getElementById("otpResult").style.color = "green";
+    })
+    .catch((error) => {
+      console.error("Error sending admin confirmation:", error);
+    });
 }
+
 
 // Pre-order functionality
 document.addEventListener('DOMContentLoaded', function() {
