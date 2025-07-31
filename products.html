@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Odisika Import | Premium Import Solutions</title>
+    <meta name="description" content="Browse our extensive collection of imported products from China, USA, and Europe. Electronics, Fashion, Home & Garden items with quality guarantee.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="index.html">
+                <i class="fas fa-ship me-2"></i>Odisika Import
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="products-hero bg-gradient-to-r from-blue-900 to-blue-700 text-white py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Premium Import Products</h1>
+                    <p class="lead mb-4">Discover our extensive collection of high-quality products sourced directly from top manufacturers worldwide. From electronics to fashion, we bring you the best at unbeatable prices.</p>
+                    <div class="hero-stats">
+                        <div class="row g-3">
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="stat-item">
+                                    <h3 class="text-warning mb-0">10,000+</h3>
+                                    <small>Products Available</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="stat-item">
+                                    <h3 class="text-warning mb-0">50+</h3>
+                                    <small>Categories</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="stat-item">
+                                    <h3 class="text-warning mb-0">99%</h3>
+                                    <small>Quality Guarantee</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 text-center">
+                                <div class="stat-item">
+                                    <h3 class="text-warning mb-0">24/7</h3>
+                                    <small>Support</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-boxes" style="font-size: 150px; opacity: 0.8;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="search-box">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="productSearch" placeholder="Search products...">
+                            <button class="btn btn-primary" type="button" onclick="searchProducts()">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="categoryFilter" onchange="filterProducts()">
+                        <option value="">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion & Accessories</option>
+                        <option value="home">Home & Garden</option>
+                        <option value="sports">Sports & Fitness</option>
+                        <option value="beauty">Beauty & Health</option>
+                        <option value="automotive">Automotive</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" id="priceFilter" onchange="filterProducts()">
+                        <option value="">All Prices</option>
+                        <option value="0-100">₵0 - ₵100</option>
+                        <option value="100-500">₵100 - ₵500</option>
+                        <option value="500-1000">₵500 - ₵1,000</option>
+                        <option value="1000+">₵1,000+</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="text-center mb-3">Featured Products</h2>
+                    <p class="text-center text-muted">Hand-picked selections from our extensive catalog</p>
+                </div>
+            </div>
+            
+            <div class="row g-4" id="productsGrid">
+                <!-- Electronics Category -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="electronics" data-price="1299">
+                    <div class="product-card card h-100 shadow-sm">
+                        <div class="product-image position-relative">
+                            <div class="image-placeholder bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <i class="fas fa-laptop text-primary" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="product-badges position-absolute top-0 start-0 p-2">
+                                <span class="badge bg-danger">Hot Sale</span>
+                                <span class="badge bg-success">Quality+</span>
+                            </div>
+                            <div class="product-actions position-absolute top-0 end-0 p-2">
+                                <button class="btn btn-sm btn-outline-light rounded-pill" onclick="toggleWishlist(this)">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Laptop - Core i7</h5>
+                            <p class="card-text text-muted">High-performance laptop with Intel Core i7 processor, 16GB RAM, 512GB SSD. Perfect for professionals and students.</p>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2 text-muted">(127 reviews)</span>
+                            </div>
+                            <div class="product-price mb-3">
+                                <span class="h4 text-primary">₵1,299</span>
+                                <span class="text-muted text-decoration-line-through ms-2">₵1,599</span>
+                                <span class="badge bg-success ms-2">19% OFF</span>
+                            </div>
+                            <div class="product-features mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-shipping-fast me-1"></i>Free Shipping
+                                    <i class="fas fa-shield-check ms-3 me-1"></i>1 Year Warranty
+                                </small>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="showProductDetails('laptop-i7')">
+                                    <i class="fas fa-eye me-2"></i>View Details
+                                </button>
+                                <button class="btn btn-warning" onclick="openPreorderModal('Premium Laptop - Core i7', '₵1,299')">
+                                    <i class="fas fa-shopping-cart me-2"></i>Pre-Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fashion Category -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="fashion" data-price="129">
+                    <div class="product-card card h-100 shadow-sm">
+                        <div class="product-image position-relative">
+                            <div class="image-placeholder bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <i class="fas fa-tshirt text-success" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="product-badges position-absolute top-0 start-0 p-2">
+                                <span class="badge bg-info">New Arrival</span>
+                            </div>
+                            <div class="product-actions position-absolute top-0 end-0 p-2">
+                                <button class="btn btn-sm btn-outline-light rounded-pill" onclick="toggleWishlist(this)">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Designer Fashion Bundle</h5>
+                            <p class="card-text text-muted">Premium clothing collection including shirts, dresses, and accessories. Latest fashion trends from top designers.</p>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="ms-2 text-muted">(89 reviews)</span>
+                            </div>
+                            <div class="product-price mb-3">
+                                <span class="h4 text-primary">₵129</span>
+                                <span class="text-muted text-decoration-line-through ms-2">₵179</span>
+                                <span class="badge bg-success ms-2">28% OFF</span>
+                            </div>
+                            <div class="product-features mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-sync-alt me-1"></i>Easy Returns
+                                    <i class="fas fa-tags ms-3 me-1"></i>Multiple Sizes
+                                </small>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="showProductDetails('fashion-bundle')">
+                                    <i class="fas fa-eye me-2"></i>View Details
+                                </button>
+                                <button class="btn btn-warning" onclick="openPreorderModal('Designer Fashion Bundle', '₵129')">
+                                    <i class="fas fa-shopping-cart me-2"></i>Pre-Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home & Garden Category -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="home" data-price="389">
+                    <div class="product-card card h-100 shadow-sm">
+                        <div class="product-image position-relative">
+                            <div class="image-placeholder bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <i class="fas fa-home text-warning" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="product-badges position-absolute top-0 start-0 p-2">
+                                <span class="badge bg-primary">Best Seller</span>
+                            </div>
+                            <div class="product-actions position-absolute top-0 end-0 p-2">
+                                <button class="btn btn-sm btn-outline-light rounded-pill" onclick="toggleWishlist(this)">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Home Essentials Kit</h5>
+                            <p class="card-text text-muted">Complete smart home package with LED lights, security cameras, smart switches, and home automation devices.</p>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2 text-muted">(203 reviews)</span>
+                            </div>
+                            <div class="product-price mb-3">
+                                <span class="h4 text-primary">₵389</span>
+                                <span class="text-muted text-decoration-line-through ms-2">₵499</span>
+                                <span class="badge bg-success ms-2">22% OFF</span>
+                            </div>
+                            <div class="product-features mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-tools me-1"></i>Easy Install
+                                    <i class="fas fa-wifi ms-3 me-1"></i>App Control
+                                </small>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="showProductDetails('smart-home-kit')">
+                                    <i class="fas fa-eye me-2"></i>View Details
+                                </button>
+                                <button class="btn btn-warning" onclick="openPreorderModal('Smart Home Essentials Kit', '₵389')">
+                                    <i class="fas fa-shopping-cart me-2"></i>Pre-Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports & Fitness -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="sports" data-price="199">
+                    <div class="product-card card h-100 shadow-sm">
+                        <div class="product-image position-relative">
+                            <div class="image-placeholder bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <i class="fas fa-dumbbell text-danger" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="product-badges position-absolute top-0 start-0 p-2">
+                                <span class="badge bg-warning text-dark">Limited</span>
+                            </div>
+                            <div class="product-actions position-absolute top-0 end-0 p-2">
+                                <button class="btn btn-sm btn-outline-light rounded-pill" onclick="toggleWishlist(this)">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Professional Fitness Set</h5>
+                            <p class="card-text text-muted">Complete workout equipment including resistance bands, yoga mat, dumbbells, and fitness tracker.</p>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="ms-2 text-muted">(156 reviews)</span>
+                            </div>
+                            <div class="product-price mb-3">
+                                <span class="h4 text-primary">₵199</span>
+                                <span class="text-muted text-decoration-line-through ms-2">₵249</span>
+                                <span class="badge bg-success ms-2">20% OFF</span>
+                            </div>
+                            <div class="product-features mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-weight-hanging me-1"></i>Pro Grade
+                                    <i class="fas fa-medal ms-3 me-1"></i>Certified
+                                </small>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="showProductDetails('fitness-set')">
+                                    <i class="fas fa-eye me-2"></i>View Details
+                                </button>
+                                <button class="btn btn-warning" onclick="openPreorderModal('Professional Fitness Set', '₵199')">
+                                    <i class="fas fa-shopping-cart me-2"></i>Pre-Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beauty & Health -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="beauty" data-price="89">
+                    <div class="product-card card h-100 shadow-sm">
+                        <div class="product-image position-relative">
+                            <div class="image-placeholder bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <i class="fas fa-spa text-info" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="product-badges position-absolute top-0 start-0 p-2">
+                                <span class="badge bg-success">Organic</span>
+                            </div>
+                            <div class="product-actions position-absolute top-0 end-0 p-2">
+                                <button class="btn btn-sm btn-outline-light rounded-pill" onclick="toggleWishlist(this)">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Beauty Care Set</h5>
+                            <p class="card-text text-muted">Premium skincare and beauty products including serums, moisturizers, cleansers, and makeup essentials.</p>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2 text-muted">(94 reviews)</span>
+                            </div>
+                            <div class="product-price mb-3">
+                                <span class="h4 text-primary">₵89</span>
+                                <span class="text-muted text-decoration-line-through ms-2">₵119</span>
+                                <span class="badge bg-success ms-2">25% OFF</span>
+                            </div>
+                            <div class="product-features mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-leaf me-1"></i>Natural
+                                    <i class="fas fa-award ms-3 me-1"></i>Dermatologist Tested
+                                </small>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="showProductDetails('beauty-set')">
+                                    <i class="fas fa-eye me-2"></i>View Details
+                                </button>
+                                <button class="btn btn-warning" onclick="openPreorderModal('Luxury Beauty Care Set', '₵89')">
+                                    <i class="fas fa-shopping-cart me-2"></i>Pre-Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automotive -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="automotive" data-price="299">
+                    <div class="product-card card h-100 shadow-sm">
+                        <div class="product-image position-relative">
+                            <div class="image-placeholder bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <i class="fas fa-car text-dark" style="font-size: 4rem;"></i>
+                            </div>
+                            <div class="product-badges position-absolute top-0 start-0 p-2">
+                                <span class="badge bg-dark">Premium</span>
+                            </div>
+                            <div class="product-actions position-absolute top-0 end-0 p-2">
+                                <button class="btn btn-sm btn-outline-light rounded-pill" onclick="toggleWishlist(this)">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Car Accessories Bundle</h5>
+                            <p class="card-text text-muted">Complete car enhancement package with GPS navigator, dash cam, seat covers, and premium car care products.</p>
+                            <div class="product-rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="ms-2 text-muted">(78 reviews)</span>
+                            </div>
+                            <div class="product-price mb-3">
+                                <span class="h4 text-primary">₵299</span>
+                                <span class="text-muted text-decoration-line-through ms-2">₵399</span>
+                                <span class="badge bg-success ms-2">25% OFF</span>
+                            </div>
+                            <div class="product-features mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-cogs me-1"></i>Universal Fit
+                                    <i class="fas fa-certificate ms-3 me-1"></i>ISO Certified
+                                </small>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="showProductDetails('car-bundle')">
+                                    <i class="fas fa-eye me-2"></i>View Details
+                                </button>
+                                <button class="btn btn-warning" onclick="openPreorderModal('Car Accessories Bundle', '₵299')">
+                                    <i class="fas fa-shopping-cart me-2"></i>Pre-Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-primary btn-lg" onclick="loadMoreProducts()">
+                        <i class="fas fa-plus me-2"></i>Load More Products
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Modal -->
+    <div class="modal fade" id="productDetailsModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalTitle">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    <!-- Product details will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" id="modalPreorderBtn">
+                        <i class="fas fa-shopping-cart me-2"></i>Pre-Order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pre-order Modal -->
+    <div class="modal fade" id="preorderModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pre-Order Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="preorderForm">
+                        <input type="hidden" id="selectedProduct">
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="customerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="customerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="customerPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" min="1" value="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="notes" class="form-label">Additional Notes</label>
+                            <textarea class="form-control" id="notes" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="submitPreorder()">Submit Pre-Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-warning">Odisika Import</h5>
+                    <p>Your trusted partner for international trade solutions.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Odisika Import. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/233543210987" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
