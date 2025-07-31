@@ -1,0 +1,866 @@
+[
+  {
+    "id": 1,
+    "name": "Smartwatch 671",
+    "price": 1415,
+    "category": "electronics",
+    "description": "High-quality smartwatch 671 perfect for your needs.",
+    "image": "images/electronics/smartwatch_671.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone 415",
+    "price": 639,
+    "category": "electronics",
+    "description": "High-quality smartphone 415 perfect for your needs.",
+    "image": "images/electronics/smartphone_415.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Smartphone 831",
+    "price": 1060,
+    "category": "electronics",
+    "description": "High-quality smartphone 831 perfect for your needs.",
+    "image": "images/electronics/smartphone_831.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Laptop 353",
+    "price": 222,
+    "category": "electronics",
+    "description": "High-quality laptop 353 perfect for your needs.",
+    "image": "images/electronics/laptop_353.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Laptop 881",
+    "price": 264,
+    "category": "electronics",
+    "description": "High-quality laptop 881 perfect for your needs.",
+    "image": "images/electronics/laptop_881.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Smartwatch 541",
+    "price": 1033,
+    "category": "electronics",
+    "description": "High-quality smartwatch 541 perfect for your needs.",
+    "image": "images/electronics/smartwatch_541.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Laptop 437",
+    "price": 741,
+    "category": "electronics",
+    "description": "High-quality laptop 437 perfect for your needs.",
+    "image": "images/electronics/laptop_437.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Wireless Earbuds 677",
+    "price": 804,
+    "category": "electronics",
+    "description": "High-quality wireless earbuds 677 perfect for your needs.",
+    "image": "images/electronics/wireless_earbuds_677.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Wireless Earbuds 272",
+    "price": 657,
+    "category": "electronics",
+    "description": "High-quality wireless earbuds 272 perfect for your needs.",
+    "image": "images/electronics/wireless_earbuds_272.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Tablet 479",
+    "price": 1440,
+    "category": "electronics",
+    "description": "High-quality tablet 479 perfect for your needs.",
+    "image": "images/electronics/tablet_479.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Laptop 726",
+    "price": 58,
+    "category": "electronics",
+    "description": "High-quality laptop 726 perfect for your needs.",
+    "image": "images/electronics/laptop_726.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Smartphone 620",
+    "price": 296,
+    "category": "electronics",
+    "description": "High-quality smartphone 620 perfect for your needs.",
+    "image": "images/electronics/smartphone_620.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Smartwatch 224",
+    "price": 1262,
+    "category": "electronics",
+    "description": "High-quality smartwatch 224 perfect for your needs.",
+    "image": "images/electronics/smartwatch_224.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Smartphone 157",
+    "price": 1053,
+    "category": "electronics",
+    "description": "High-quality smartphone 157 perfect for your needs.",
+    "image": "images/electronics/smartphone_157.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Wireless Earbuds 461",
+    "price": 631,
+    "category": "electronics",
+    "description": "High-quality wireless earbuds 461 perfect for your needs.",
+    "image": "images/electronics/wireless_earbuds_461.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Laptop 658",
+    "price": 1224,
+    "category": "electronics",
+    "description": "High-quality laptop 658 perfect for your needs.",
+    "image": "images/electronics/laptop_658.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Wireless Earbuds 822",
+    "price": 399,
+    "category": "electronics",
+    "description": "High-quality wireless earbuds 822 perfect for your needs.",
+    "image": "images/electronics/wireless_earbuds_822.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Wireless Earbuds 183",
+    "price": 657,
+    "category": "electronics",
+    "description": "High-quality wireless earbuds 183 perfect for your needs.",
+    "image": "images/electronics/wireless_earbuds_183.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Jeans 795",
+    "price": 693,
+    "category": "fashion",
+    "description": "High-quality jeans 795 perfect for your needs.",
+    "image": "images/fashion/jeans_795.jpg"
+  },
+  {
+    "id": 20,
+    "name": "T-shirt 278",
+    "price": 583,
+    "category": "fashion",
+    "description": "High-quality t-shirt 278 perfect for your needs.",
+    "image": "images/fashion/t-shirt_278.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Jacket 199",
+    "price": 242,
+    "category": "fashion",
+    "description": "High-quality jacket 199 perfect for your needs.",
+    "image": "images/fashion/jacket_199.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Pens",
+    "price": 239,
+    "category": "fashion",
+    "description": "High-quality pens perfect for your needs.",
+    "image": "images/pens.jpeg"
+  },
+  {
+    "id": 23,
+    "name": "T-shirt 383",
+    "price": 787,
+    "category": "fashion",
+    "description": "High-quality t-shirt 383 perfect for your needs.",
+    "image": "images/dress.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "Handbag 719",
+    "price": 1366,
+    "category": "fashion",
+    "description": "High-quality handbag 719 perfect for your needs.",
+    "image": "images/bags.jpeg"
+  },
+  {
+    "id": 25,
+    "name": "Towels 205",
+    "price": 98,
+    "category": "fashion",
+    "description": "High-quality towels 205 perfect for your needs.",
+    "image": "images/towels.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Sneakers 160",
+    "price": 451,
+    "category": "fashion",
+    "description": "High-quality sneakers 160 perfect for your needs.",
+    "image": "images/fashion/sneakers_160.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Jeans 206",
+    "price": 1326,
+    "category": "fashion",
+    "description": "High-quality jeans 206 perfect for your needs.",
+    "image": "images/fashion/jeans_206.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Sneakers 734",
+    "price": 1282,
+    "category": "fashion",
+    "description": "High-quality sneakers 734 perfect for your needs.",
+    "image": "images/fashion/sneakers_734.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Jacket 300",
+    "price": 689,
+    "category": "fashion",
+    "description": "High-quality jacket 300 perfect for your needs.",
+    "image": "images/fashion/jacket_300.jpg"
+  },
+  {
+    "id": 30,
+    "name": "T-shirt 414",
+    "price": 1128,
+    "category": "fashion",
+    "description": "High-quality t-shirt 414 perfect for your needs.",
+    "image": "images/fashion/t-shirt_414.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Handbag 921",
+    "price": 875,
+    "category": "fashion",
+    "description": "High-quality handbag 921 perfect for your needs.",
+    "image": "images/fashion/handbag_921.jpg"
+  },
+  {
+    "id": 32,
+    "name": "T-shirt 830",
+    "price": 1385,
+    "category": "fashion",
+    "description": "High-quality t-shirt 830 perfect for your needs.",
+    "image": "images/fashion/t-shirt_830.jpg"
+  },
+  {
+    "id": 33,
+    "name": "T-shirt 245",
+    "price": 1105,
+    "category": "fashion",
+    "description": "High-quality t-shirt 245 perfect for your needs.",
+    "image": "images/fashion/t-shirt_245.jpg"
+  },
+  {
+    "id": 34,
+    "name": "T-shirt 115",
+    "price": 429,
+    "category": "fashion",
+    "description": "High-quality t-shirt 115 perfect for your needs.",
+    "image": "images/fashion/t-shirt_115.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Jeans 792",
+    "price": 91,
+    "category": "fashion",
+    "description": "High-quality jeans 792 perfect for your needs.",
+    "image": "images/fashion/jeans_792.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Jeans 215",
+    "price": 139,
+    "category": "fashion",
+    "description": "High-quality jeans 215 perfect for your needs.",
+    "image": "images/fashion/jeans_215.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Blender 708",
+    "price": 418,
+    "category": "home",
+    "description": "High-quality blender 708 perfect for your needs.",
+    "image": "images/home/blender_708.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Sofa 634",
+    "price": 1485,
+    "category": "home",
+    "description": "High-quality sofa 634 perfect for your needs.",
+    "image": "images/home/sofa_634.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Vacuum Cleaner 779",
+    "price": 340,
+    "category": "home",
+    "description": "High-quality vacuum cleaner 779 perfect for your needs.",
+    "image": "images/home/vacuum_cleaner_779.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Sofa 926",
+    "price": 51,
+    "category": "home",
+    "description": "High-quality sofa 926 perfect for your needs.",
+    "image": "images/home/sofa_926.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Microwave 435",
+    "price": 230,
+    "category": "home",
+    "description": "High-quality microwave 435 perfect for your needs.",
+    "image": "images/home/microwave_435.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Vacuum Cleaner 497",
+    "price": 1014,
+    "category": "home",
+    "description": "High-quality vacuum cleaner 497 perfect for your needs.",
+    "image": "images/home/vacuum_cleaner_497.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Ceramics Bowls",
+    "price": 409,
+    "category": "home",
+    "description": "High-quality ceramics bowls perfect for your needs.",
+    "image": "images/bowls.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Blender 865",
+    "price": 881,
+    "category": "home",
+    "description": "High-quality blender 865 perfect for your needs.",
+    "image": "images/home/blender_865.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Sofa 285",
+    "price": 1141,
+    "category": "home",
+    "description": "High-quality sofa 285 perfect for your needs.",
+    "image": "images/home/sofa_285.jpg"
+  },
+  {
+    "id": 46,
+    "name": "Vacuum Cleaner 813",
+    "price": 1288,
+    "category": "home",
+    "description": "High-quality vacuum cleaner 813 perfect for your needs.",
+    "image": "images/home/vacuum_cleaner_813.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Microwave 258",
+    "price": 1095,
+    "category": "home",
+    "description": "High-quality microwave 258 perfect for your needs.",
+    "image": "images/home/microwave_258.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Blender 513",
+    "price": 1229,
+    "category": "home",
+    "description": "High-quality blender 513 perfect for your needs.",
+    "image": "images/home/blender_513.jpg"
+  },
+  {
+    "id": 49,
+    "name": "Microwave 464",
+    "price": 586,
+    "category": "home",
+    "description": "High-quality microwave 464 perfect for your needs.",
+    "image": "images/home/microwave_464.jpg"
+  },
+  {
+    "id": 50,
+    "name": "Vacuum Cleaner 275",
+    "price": 430,
+    "category": "home",
+    "description": "High-quality vacuum cleaner 275 perfect for your needs.",
+    "image": "images/home/vacuum_cleaner_275.jpg"
+  },
+  {
+    "id": 51,
+    "name": "Blender 493",
+    "price": 948,
+    "category": "home",
+    "description": "High-quality blender 493 perfect for your needs.",
+    "image": "images/home/blender_493.jpg"
+  },
+  {
+    "id": 52,
+    "name": "Curtains 748",
+    "price": 1490,
+    "category": "home",
+    "description": "High-quality curtains 748 perfect for your needs.",
+    "image": "images/home/curtains_748.jpg"
+  },
+  {
+    "id": 53,
+    "name": "Vacuum Cleaner 236",
+    "price": 219,
+    "category": "home",
+    "description": "High-quality vacuum cleaner 236 perfect for your needs.",
+    "image": "images/home/vacuum_cleaner_236.jpg"
+  },
+  {
+    "id": 54,
+    "name": "Sofa 662",
+    "price": 658,
+    "category": "home",
+    "description": "High-quality sofa 662 perfect for your needs.",
+    "image": "images/home/sofa_662.jpg"
+  },
+  {
+    "id": 55,
+    "name": "Yoga Mat 589",
+    "price": 1205,
+    "category": "sports",
+    "description": "High-quality yoga mat 589 perfect for your needs.",
+    "image": "images/sports/yoga_mat_589.jpg"
+  },
+  {
+    "id": 56,
+    "name": "Basketball 421",
+    "price": 1458,
+    "category": "sports",
+    "description": "High-quality basketball 421 perfect for your needs.",
+    "image": "images/sports/basketball_421.jpg"
+  },
+  {
+    "id": 57,
+    "name": "Treadmill 701",
+    "price": 1322,
+    "category": "sports",
+    "description": "High-quality treadmill 701 perfect for your needs.",
+    "image": "images/sports/treadmill_701.jpg"
+  },
+  {
+    "id": 58,
+    "name": "Yoga Mat 940",
+    "price": 213,
+    "category": "sports",
+    "description": "High-quality yoga mat 940 perfect for your needs.",
+    "image": "images/sports/yoga_mat_940.jpg"
+  },
+  {
+    "id": 59,
+    "name": "Dumbbells 695",
+    "price": 58,
+    "category": "sports",
+    "description": "High-quality dumbbells 695 perfect for your needs.",
+    "image": "images/sports/dumbbells_695.jpg"
+  },
+  {
+    "id": 60,
+    "name": "Dumbbells 540",
+    "price": 524,
+    "category": "sports",
+    "description": "High-quality dumbbells 540 perfect for your needs.",
+    "image": "images/sports/dumbbells_540.jpg"
+  },
+  {
+    "id": 61,
+    "name": "Yoga Mat 483",
+    "price": 339,
+    "category": "sports",
+    "description": "High-quality yoga mat 483 perfect for your needs.",
+    "image": "images/sports/yoga_mat_483.jpg"
+  },
+  {
+    "id": 62,
+    "name": "Dumbbells 687",
+    "price": 306,
+    "category": "sports",
+    "description": "High-quality dumbbells 687 perfect for your needs.",
+    "image": "images/sports/dumbbells_687.jpg"
+  },
+  {
+    "id": 63,
+    "name": "Yoga Mat 118",
+    "price": 1152,
+    "category": "sports",
+    "description": "High-quality yoga mat 118 perfect for your needs.",
+    "image": "images/sports/yoga_mat_118.jpg"
+  },
+  {
+    "id": 64,
+    "name": "Football 854",
+    "price": 415,
+    "category": "sports",
+    "description": "High-quality football 854 perfect for your needs.",
+    "image": "images/sports/football_854.jpg"
+  },
+  {
+    "id": 65,
+    "name": "Dumbbells 751",
+    "price": 274,
+    "category": "sports",
+    "description": "High-quality dumbbells 751 perfect for your needs.",
+    "image": "images/sports/dumbbells_751.jpg"
+  },
+  {
+    "id": 66,
+    "name": "Football 887",
+    "price": 1293,
+    "category": "sports",
+    "description": "High-quality football 887 perfect for your needs.",
+    "image": "images/sports/football_887.jpg"
+  },
+  {
+    "id": 67,
+    "name": "Football 935",
+    "price": 63,
+    "category": "sports",
+    "description": "High-quality football 935 perfect for your needs.",
+    "image": "images/sports/football_935.jpg"
+  },
+  {
+    "id": 68,
+    "name": "Yoga Mat 323",
+    "price": 384,
+    "category": "sports",
+    "description": "High-quality yoga mat 323 perfect for your needs.",
+    "image": "images/sports/yoga_mat_323.jpg"
+  },
+  {
+    "id": 69,
+    "name": "Dumbbells 780",
+    "price": 1398,
+    "category": "sports",
+    "description": "High-quality dumbbells 780 perfect for your needs.",
+    "image": "images/sports/dumbbells_780.jpg"
+  },
+  {
+    "id": 70,
+    "name": "Yoga Mat 686",
+    "price": 99,
+    "category": "sports",
+    "description": "High-quality yoga mat 686 perfect for your needs.",
+    "image": "images/sports/yoga_mat_686.jpg"
+  },
+  {
+    "id": 71,
+    "name": "Football 382",
+    "price": 1311,
+    "category": "sports",
+    "description": "High-quality football 382 perfect for your needs.",
+    "image": "images/sports/football_382.jpg"
+  },
+  {
+    "id": 72,
+    "name": "Football 239",
+    "price": 631,
+    "category": "sports",
+    "description": "High-quality football 239 perfect for your needs.",
+    "image": "images/sports/football_239.jpg"
+  },
+  {
+    "id": 73,
+    "name": "Nail Kit 250",
+    "price": 477,
+    "category": "beauty",
+    "description": "High-quality nail kit 250 perfect for your needs.",
+    "image": "images/beauty/nail_kit_250.jpg"
+  },
+  {
+    "id": 74,
+    "name": "Hair Dryer 847",
+    "price": 126,
+    "category": "beauty",
+    "description": "High-quality hair dryer 847 perfect for your needs.",
+    "image": "images/beauty/hair_dryer_847.jpg"
+  },
+  {
+    "id": 75,
+    "name": "Perfume 429",
+    "price": 151,
+    "category": "beauty",
+    "description": "High-quality perfume 429 perfect for your needs.",
+    "image": "images/beauty/perfume_429.jpg"
+  },
+  {
+    "id": 76,
+    "name": "Nail Kit 683",
+    "price": 1127,
+    "category": "beauty",
+    "description": "High-quality nail kit 683 perfect for your needs.",
+    "image": "images/beauty/nail_kit_683.jpg"
+  },
+  {
+    "id": 77,
+    "name": "Hair Dryer 752",
+    "price": 121,
+    "category": "beauty",
+    "description": "High-quality hair dryer 752 perfect for your needs.",
+    "image": "images/beauty/hair_dryer_752.jpg"
+  },
+  {
+    "id": 78,
+    "name": "Perfume 550",
+    "price": 270,
+    "category": "beauty",
+    "description": "High-quality perfume 550 perfect for your needs.",
+    "image": "images/beauty/perfume_550.jpg"
+  },
+  {
+    "id": 79,
+    "name": "Skincare Set 204",
+    "price": 570,
+    "category": "beauty",
+    "description": "High-quality skincare set 204 perfect for your needs.",
+    "image": "images/beauty/skincare_set_204.jpg"
+  },
+  {
+    "id": 80,
+    "name": "Lipstick 106",
+    "price": 50,
+    "category": "beauty",
+    "description": "High-quality lipstick 106 perfect for your needs.",
+    "image": "images/beauty/lipstick_106.jpg"
+  },
+  {
+    "id": 81,
+    "name": "Nail Kit 975",
+    "price": 171,
+    "category": "beauty",
+    "description": "High-quality nail kit 975 perfect for your needs.",
+    "image": "images/beauty/nail_kit_975.jpg"
+  },
+  {
+    "id": 82,
+    "name": "Perfume 853",
+    "price": 562,
+    "category": "beauty",
+    "description": "High-quality perfume 853 perfect for your needs.",
+    "image": "images/beauty/perfume_853.jpg"
+  },
+  {
+    "id": 83,
+    "name": "Nail Kit 112",
+    "price": 624,
+    "category": "beauty",
+    "description": "High-quality nail kit 112 perfect for your needs.",
+    "image": "images/beauty/nail_kit_112.jpg"
+  },
+  {
+    "id": 84,
+    "name": "Hair Dryer 906",
+    "price": 478,
+    "category": "beauty",
+    "description": "High-quality hair dryer 906 perfect for your needs.",
+    "image": "images/beauty/hair_dryer_906.jpg"
+  },
+  {
+    "id": 85,
+    "name": "Nail Kit 309",
+    "price": 889,
+    "category": "beauty",
+    "description": "High-quality nail kit 309 perfect for your needs.",
+    "image": "images/beauty/nail_kit_309.jpg"
+  },
+  {
+    "id": 86,
+    "name": "Lipstick 187",
+    "price": 52,
+    "category": "beauty",
+    "description": "High-quality lipstick 187 perfect for your needs.",
+    "image": "images/beauty/lipstick_187.jpg"
+  },
+  {
+    "id": 87,
+    "name": "Lipstick 322",
+    "price": 1415,
+    "category": "beauty",
+    "description": "High-quality lipstick 322 perfect for your needs.",
+    "image": "images/beauty/lipstick_322.jpg"
+  },
+  {
+    "id": 88,
+    "name": "Perfume 409",
+    "price": 684,
+    "category": "beauty",
+    "description": "High-quality perfume 409 perfect for your needs.",
+    "image": "images/beauty/perfume_409.jpg"
+  },
+  {
+    "id": 89,
+    "name": "Lipstick 732",
+    "price": 1357,
+    "category": "beauty",
+    "description": "High-quality lipstick 732 perfect for your needs.",
+    "image": "images/beauty/lipstick_732.jpg"
+  },
+  {
+    "id": 90,
+    "name": "Hair Dryer 306",
+    "price": 1458,
+    "category": "beauty",
+    "description": "High-quality hair dryer 306 perfect for your needs.",
+    "image": "images/beauty/hair_dryer_306.jpg"
+  },
+  {
+    "id": 91,
+    "name": "GPS Navigator 387",
+    "price": 404,
+    "category": "automotive",
+    "description": "High-quality gps navigator 387 perfect for your needs.",
+    "image": "images/automotive/gps_navigator_387.jpg"
+  },
+  {
+    "id": 92,
+    "name": "Dash Cam 831",
+    "price": 182,
+    "category": "automotive",
+    "description": "High-quality dash cam 831 perfect for your needs.",
+    "image": "images/automotive/dash_cam_831.jpg"
+  },
+  {
+    "id": 93,
+    "name": "Seat Cover 712",
+    "price": 328,
+    "category": "automotive",
+    "description": "High-quality seat cover 712 perfect for your needs.",
+    "image": "images/automotive/seat_cover_712.jpg"
+  },
+  {
+    "id": 94,
+    "name": "Car Vacuum 173",
+    "price": 832,
+    "category": "automotive",
+    "description": "High-quality car vacuum 173 perfect for your needs.",
+    "image": "images/automotive/car_vacuum_173.jpg"
+  },
+  {
+    "id": 95,
+    "name": "GPS Navigator 802",
+    "price": 82,
+    "category": "automotive",
+    "description": "High-quality gps navigator 802 perfect for your needs.",
+    "image": "images/automotive/gps_navigator_802.jpg"
+  },
+  {
+    "id": 96,
+    "name": "GPS Navigator 799",
+    "price": 1358,
+    "category": "automotive",
+    "description": "High-quality gps navigator 799 perfect for your needs.",
+    "image": "images/automotive/gps_navigator_799.jpg"
+  },
+  {
+    "id": 97,
+    "name": "Car Wax 141",
+    "price": 688,
+    "category": "automotive",
+    "description": "High-quality car wax 141 perfect for your needs.",
+    "image": "images/automotive/car_wax_141.jpg"
+  },
+  {
+    "id": 98,
+    "name": "Car Vacuum 944",
+    "price": 1070,
+    "category": "automotive",
+    "description": "High-quality car vacuum 944 perfect for your needs.",
+    "image": "images/automotive/car_vacuum_944.jpg"
+  },
+  {
+    "id": 99,
+    "name": "Dash Cam 621",
+    "price": 894,
+    "category": "automotive",
+    "description": "High-quality dash cam 621 perfect for your needs.",
+    "image": "images/automotive/dash_cam_621.jpg"
+  },
+  {
+    "id": 100,
+    "name": "Car Wax 782",
+    "price": 1210,
+    "category": "automotive",
+    "description": "High-quality car wax 782 perfect for your needs.",
+    "image": "images/automotive/car_wax_782.jpg"
+  },
+  {
+    "id": 101,
+    "name": "Car Wax 915",
+    "price": 902,
+    "category": "automotive",
+    "description": "High-quality car wax 915 perfect for your needs.",
+    "image": "images/automotive/car_wax_915.jpg"
+  },
+  {
+    "id": 102,
+    "name": "Car Wax 828",
+    "price": 383,
+    "category": "automotive",
+    "description": "High-quality car wax 828 perfect for your needs.",
+    "image": "images/automotive/car_wax_828.jpg"
+  },
+  {
+    "id": 103,
+    "name": "Dash Cam 993",
+    "price": 1038,
+    "category": "automotive",
+    "description": "High-quality dash cam 993 perfect for your needs.",
+    "image": "images/automotive/dash_cam_993.jpg"
+  },
+  {
+    "id": 104,
+    "name": "GPS Navigator 289",
+    "price": 176,
+    "category": "automotive",
+    "description": "High-quality gps navigator 289 perfect for your needs.",
+    "image": "images/automotive/gps_navigator_289.jpg"
+  },
+  {
+    "id": 105,
+    "name": "Dash Cam 434",
+    "price": 636,
+    "category": "automotive",
+    "description": "High-quality dash cam 434 perfect for your needs.",
+    "image": "images/automotive/dash_cam_434.jpg"
+  },
+  {
+    "id": 106,
+    "name": "Car Wax 868",
+    "price": 887,
+    "category": "automotive",
+    "description": "High-quality car wax 868 perfect for your needs.",
+    "image": "images/automotive/car_wax_868.jpg"
+  },
+  {
+    "id": 107,
+    "name": "Seat Cover 371",
+    "price": 764,
+    "category": "automotive",
+    "description": "High-quality seat cover 371 perfect for your needs.",
+    "image": "images/automotive/seat_cover_371.jpg"
+  },
+  {
+    "id": 108,
+    "name": "Car Vacuum 480",
+    "price": 1379,
+    "category": "automotive",
+    "description": "High-quality car vacuum 480 perfect for your needs.",
+    "image": "images/automotive/car_vacuum_480.jpg"
+  }
+]
